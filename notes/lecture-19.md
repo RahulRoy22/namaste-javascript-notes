@@ -63,7 +63,19 @@ const oddArr = array.filter(isOdd); // [5,1,3]
 
 // Other way of writing the above:
 const oddArr = arr.filter((x) => x % 2);
+
+function isEven(x) {
+return x %2 ===0;
+}
+
+const evenArr= arr.filter(isEven);
+console.log(output);
+
+
+
 ```
+
+
 
 Filter function creates an array and store only those values which evaluates to true.
 
