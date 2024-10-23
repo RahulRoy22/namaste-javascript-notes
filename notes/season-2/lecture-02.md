@@ -175,6 +175,11 @@ createOrder(cart)
   });
 
 // To improve readability you can use arrow function instead of regular function
+
+createOrder(cart)
+.then(orderId => proceedToPayment(orderId))
+.then(paymentInfo => showOrderSummary(paymentInfo))
+.then(PaymentInfo => updateWalletBalance(paymentInfo);
 ```
 
 <hr>
